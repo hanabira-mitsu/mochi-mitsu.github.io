@@ -6,19 +6,32 @@
 	font-family: nanumcute;
 	src: url(../assets/fonts/NanumPenCute.ttf)
 }
+/* border stuff */
+#top, #bottom, #left, #right {
+	background: #B47BDE;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0;
+}
 html {
-	border: 12px solid #B47BDE;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	overflow: auto;
 	background-color: #000000;
 	font-family: nanumcute;
 	color: #ffffff
 }
-<!-- make all links white -->
+/* make all links white */
 a {
     color: #FFFFFF;
 }
@@ -33,7 +46,7 @@ a:link {
 }
 .text {
 	padding-left: 3em;
-	line-height: 1vh;
+	line-height: 1.75em;
 	h2 {font-size:4em; padding-top:0.6em}
 	a {font-size:2.5em;}
 	p {font-size:2.5em;}
@@ -53,22 +66,27 @@ a:link {
 </head>
 <body>
 
+<!-- border stuff -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
 <div class="title">
 <h1>☆Portfolio☆</h1>
 </div>
 
-<!-- the <br> spam breaks zoom! fix that -->
 <div class="text">
 <img src="../assets/images/screenshots/hcube.png" alt="Screenshot of HyperCube 0.0.9" align="right" style="padding-top: 2em; padding-right: 6em; width: auto; height: auto; max-width: 420px; max-height: 180px">
 <h2>HyperCube</h2>
-<p>A little 2D platformer I've been working on for a while. It features basic physics, </p><p>movement, a custom level format, objects, menus, and multi-platform support.</p>
+<p>A little 2D platformer I've been working on for a while. It features basic physics, movement, a custom level format, objects, menus, and multi-platform support.</p>
 <a href="https://github.com/mochi-mitsu/hcube" target="_blank">Source Code</a>
 </div>
 
 <div class="text">
 <img src="../assets/images/screenshots/hcube-edit.png" alt="Screenshot of HyperCube Editor 0.0.2" align="right" style="padding-top: 2em; padding-right: 6em; width: auto; height: auto; max-width: 420px; max-height: 180px">
 <h2>HyperCube Editor</h2>
-<p>A level editor for HyperCube! It features loading, saving, </p><p>tile placing/removing, camera movement and zooming, tile selection menu, etc.</p>
+<p>A level editor for HyperCube! It features loading, saving, tile placing/removing, camera movement and zooming, tile selection menu, etc.</p>
 <a href="https://github.com/mochi-mitsu/hcube-edit" target="_blank">Source Code</a>
 </div>
 

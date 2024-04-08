@@ -6,19 +6,32 @@
 	font-family: nanumcute;
 	src: url(../assets/fonts/NanumPenCute.ttf)
 }
+/* border stuff */
+#top, #bottom, #left, #right {
+	background: #B47BDE;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0;
+}
 html {
-	border: 12px solid #B47BDE;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	overflow: auto;
 	background-color: #000000;
 	font-family: nanumcute;
 	color: #ffffff
 }
-<!-- make all links white -->
+/* make all links white */
 a {
     color: #FFFFFF;
 }
@@ -49,6 +62,12 @@ a:link {
 </style>
 </head>
 <body>
+
+<!-- border stuff -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
 
 <div class="title">
 <h1>☆About Me☆</h1>
