@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maddy's Site</title>
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="../stylesheet.css">
+<style>
+.line {
+	border-left: 6px solid white;
+	height: 70%;
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: 22.5%;
+}
+.text {
+	word-wrap: break-word;
+	p {font-size:2.5em;}
+	a {font-size:2.5em;}
+
+}
+.title {
+	font-size: 2.5em;
+	padding-top: 0.5em;
+	padding-left: 1.5em;
+	line-height: 1vh;
+	display: inline-block
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="line"></div>
+
+<!-- border stuff -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+
+<div class="title">
+<h1>☆College Work☆</h1>
+</div>
+
+<div class="row">
+<div class="column">
+
+<div class="title"><h2 style="padding-left: 1.25em;">Unit 12 - Software Development</h2></div>
+
+
+<video width="420" height="240" controls align="left" style="padding-top: 1em; padding-left: 22em; width: auto; height: auto; max-width: 1280px; max-height: 240px">
+  <source src="../assets/video/college-units/currconv.mp4" type="video/mp4">
+</video>
+
+<div class="text">
+<p style="width: 20em; padding-left: 2em">In this unit, I had to analyse the code used to write some software, as well as create my own application from scratch using Visual Basic. The application I made is a simple currency converter, supporting some common currencies.</p>
+<a style="padding-left: 9.5em" href="../assets/zip/CurrConvert.zip">Source Code</a> <!-- Link a zip of the source code here -->
+</div>
+
+</div>
+<div class="column">
+
+<div class="title"><h2 style="padding-left: 1.25em;">Unit 10 - Database Development</h2></div>
+
+<img src="../assets/images/screenshots/database.png" alt="Screenshot of database" align="left" style="padding-top: 1em; padding-left: 16em; width: auto; height: auto; max-width: 1280px; max-height: 240px">
+
+
+<div class="text">
+<p style="width: 20em; padding-left: 2em; padding-top: 6.5em;">In this unit, I had to plan, develop and test a database according to specifications set for me. This included the creation of various tables, forms and reports, all linked together to make efficent use of the database.</p>
+<!--a style="padding-left: 9.5em" href="./college-units.html">Source Code</a-->
+</div>
+
+</div>
+</div>
+
+<!-- Pick a couple units with good looking stuff in em. defs put currconvert in here somewhere (provide zip download of the code). mention exam results maybs? enough to fill this page up -->
+
+</body>
+</html>
